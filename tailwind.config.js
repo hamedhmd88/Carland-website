@@ -6,11 +6,37 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    container: {
+      padding: {
+        DEFAULT: '15px'
+      }
+    },
+    screens: {
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+    },
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      fontFamily: {
+        vazir: ['var(--font-vazir)', 'sans-serif'], // فونت اصلی
       },
+      fontWeight: {
+        thin: '100',
+        light: '300',
+        normal: '400',
+        medium: '500',
+        bold: '700',
+      },
+      colors: {
+        primary: "#101828",
+        secendary: "#667085",
+        accent: {
+          DEFAULT: "#ed1d24",
+          hover: "#dd242a",
+        },
+        body: "#dedede"
+      }
     },
   },
   plugins: [],
