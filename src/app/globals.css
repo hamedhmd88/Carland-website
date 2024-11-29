@@ -13,7 +13,7 @@
     @apply text-4xl md:text-6xl xl:text-[64px] text-primary xl:leading-[96px] font-extrabold mb-[18px]
   }
   h2 {
-    @apply text-4xl mb-6 font-bold
+    @apply text-5xl mb-6 font-bold
   }
   h3 {
     @apply text-xl mb-4 font-semibold

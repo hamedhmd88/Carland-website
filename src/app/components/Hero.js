@@ -91,18 +91,20 @@ function Hero() {
         </div>
 
         {searchActive ? (
-          <div 
-           className="fixed top-[80px] left-1/2 transform -translate-x-1/2 z-10 w-[80%] max-w-[1300px] p-4 rounded-lg transition-all duration-300">
+          <div className="fixed top-[80px] left-1/2 transform -translate-x-1/2 z-10 w-[80%] max-w-[1300px] p-4 rounded-lg transition-all duration-300">
             <Search />
           </div>
         ) : (
           <div className=" -mt-12 w-full max-w-[1300px] mx-auto">
-            <motion.div variants={fadeIn("up", 0.8)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: false, amount: 0.2 }} className="-mt-12 w-full max-w-[1300px] mx-auto">
-            <Search />
-          </motion.div>
+            <motion.div
+              variants={fadeIn("up", 0.8)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.2 }}
+              className="-mt-12 w-full max-w-[1300px] mx-auto"
+            >
+              <Search />
+            </motion.div>
           </div>
         )}
       </section>
