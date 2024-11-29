@@ -29,13 +29,13 @@ module.exports = {
         bold: '700',
       },
       colors: {
-        primary: "#101828",
-        secendary: "#667085",
+        primary: "#C8C8C8",
+        secendary: "#667",
         accent: {
           DEFAULT: "#ed1d24",
           hover: "#dd242a",
         },
-        body: "#dedede"
+        body: "#000000"
       }
     },
   },

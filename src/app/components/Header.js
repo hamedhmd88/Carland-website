@@ -46,8 +46,8 @@ function Header() {
     <>
       <header
         className={`${
-          header ? "bg-white shadow-md py-2" : "bg-transparent shadow-none py-4"
-        } fixed w-full max-w-[1920px] mx-auto font-vazir z-20 transition-all duration-300`}
+          header ? " bg-[#0A0A0A] text-primary shadow-md py-2" : "shadow-none py-4"
+        } fixed bg-[#0A0A0A] border-b border-[#242424]  w-full max-w-[1920px] mx-auto  font-vazir z-20 transition-all duration-300`}
       >
         <div className="xl:container mx-auto flex flex-col xl:flex-row xl:items-center xl:justify-between">
           {/* NavBar  */}
@@ -56,10 +56,10 @@ function Header() {
               nav
                 ? "max-h-max py-8 px-4 xl:py-0 xl:px-0"
                 : "max-h-0 xl:max-h-max"
-            } hidden xl:flex flex-col w-full bg-white gap-y-6 overflow-hidden font-bold  xl:flex-row xl:w-max xl:gap-x-8 xl:h-max xl:bg-transparent xl:pb-0 transition-all duration-150 text-center xl:text-left uppercase text-sm xl:text-xl xl:normal-case`}
+            } hidden xl:flex flex-col w-full  bg-[#0A0A0A] gap-y-6 overflow-hidden font-bold  xl:flex-row xl:w-max xl:gap-x-8 xl:h-max xl:bg-transparent xl:pb-0 transition-all duration-150 text-center xl:text-left  text-sm xl:text-xl xl:normal-case`}
           >
             <Link
-              className="cursor-pointer"
+              className="cursor-pointer hover:bg-[#1F1F1F] px-5 py-2 rounded-lg transition-all"
               to="home"
               activeClass="active"
               smooth={desktopMode}
@@ -68,7 +68,7 @@ function Header() {
               صفحه اصلی
             </Link>
             <Link
-              className="cursor-pointer"
+              className="cursor-pointer hover:bg-[#1F1F1F] px-5 py-2 rounded-lg transition-all"
               to="cars"
               activeClass="active"
               smooth={desktopMode}
@@ -77,7 +77,7 @@ function Header() {
               خودرو ها
             </Link>
             <Link
-              className="cursor-pointer"
+              className="cursor-pointer hover:bg-[#1F1F1F] px-5 py-2 rounded-lg transition-all"
               to="about"
               activeClass="active"
               smooth={desktopMode}
@@ -86,16 +86,16 @@ function Header() {
               درباره ما
             </Link>
             <Link
-              className="cursor-pointer"
+              className="cursor-pointer hover:bg-[#1F1F1F] px-5 py-2 rounded-lg transition-all"
               to="why"
               activeClass="active"
               smooth={desktopMode}
               spy={true}
             >
-              چرا ما
+              چرا خودرو لند
             </Link>
             <Link
-              className="cursor-pointer"
+              className="cursor-pointer hover:bg-[#1F1F1F] px-5 py-2 rounded-lg transition-all"
               to="testimonials"
               activeClass="active"
               smooth={desktopMode}
@@ -104,7 +104,7 @@ function Header() {
               نظرها
             </Link>
             <Link
-              className="cursor-pointer"
+              className="cursor-pointer hover:bg-[#1F1F1F] px-5 py-2 rounded-lg transition-all"
               to="contact"
               activeClass="active"
               smooth={desktopMode}
@@ -139,14 +139,15 @@ function Header() {
             <Link
               to="home"
               smooth={desktopMode}
+              
               spy={true}
-              className="cursor-pointer "
+              className="cursor-pointer active-logo"
             >
               <Image src={logo} width={194} height={64} alt="" />
             </Link>
           </div>
           {/* NavBar Mobile  */}
-          <nav className={`${nav ? 'max-h-max py-8 px-4 xl:py-0 xl:px-0' : 'max-h-0 xl:max-h-max'} flex flex-col w-full bg-white gap-y-6 overflow-hidden font-bold  xl:flex-row xl:w-max xl:gap-x-8 xl:h-max xl:bg-transparent xl:pb-0 transition-all duration-150 text-center xl:text-left uppercase  text-lg xl:normal-case xl:hidden`}>
+          <nav className={`${nav ? 'max-h-max py-8 px-4 xl:py-0 xl:px-0' : 'max-h-0 xl:max-h-max'} flex flex-col w-full bg-[#0a0a0aaf] gap-y-6 overflow-hidden font-bold  xl:flex-row xl:w-max xl:gap-x-8 xl:h-max xl:bg-transparent xl:pb-0 transition-all duration-150 text-center xl:text-left uppercase  text-lg xl:normal-case xl:hidden`}>
             <Link
               className="cursor-pointer"
               to="home"
@@ -181,8 +182,8 @@ function Header() {
               smooth={desktopMode}
               spy={true}
             >
-              چرا ما
-            </Link>
+              چرا خودرو لند
+              </Link>
             <Link
               className="cursor-pointer"
               to="testimonials"

@@ -99,11 +99,13 @@ function DateSelection() {
       <div as="div" className="w-full h-full flex xl:flex-row">
         <div className="relative flex-1">
           {/* Button */}
-          <button className="dropdown-btn w-full h-full flex flex-col justify-center items-center xl:items-start xl:pl-8">
+          <button className="dropdown-btn w-full h-full flex flex-col justify-center items-center xl:items-start ">
             <div className="flex flex-col xl:flex-row items-center xl:gap-x-2 gap-y-2 xl:gap-y-0">
-              <FaCalendarAlt className="text-accent" />
+              <FaCalendarAlt className="text-yellow-400 text-xl" />
+              <span className="text-primary">انتخاب تاریخ</span>
               <DatePicker
                 range
+                
                 type="input-icon"
                 inputClass="custom-input"
                 className="red"
@@ -118,9 +120,9 @@ function DateSelection() {
                   })
                 }
                 numberOfMonths={numberOfMonths} // Dynamic number of months
-                arrowClassName="custom-arrow"
+                
                 theme={{
-                  background: "#fff",
+                  background: "red",
                   color: "#000",
                   selected: {
                     background: "#ed1d24",

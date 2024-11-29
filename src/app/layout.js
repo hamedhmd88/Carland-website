@@ -41,7 +41,7 @@ export default function RootLayout({ children }) {
       <body
         className={vazir.variable}
       >
-        <div></div>
+        
         {children}
       </body>
     </html>

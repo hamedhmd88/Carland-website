@@ -4,13 +4,13 @@
 
 @layer base {
   body {
-    @apply text-primary bg-body;
+    @apply text-primary bg-[#000000];
   }
   p {
     @apply text-secendary;
   }
   h1 {
-    @apply text-4xl xl:text-[64px] text-primary xl:leading-[72px] font-extrabold mb-[18px]
+    @apply text-4xl md:text-6xl xl:text-[64px] text-primary xl:leading-[96px] font-extrabold mb-[18px]
   }
   h2 {
     @apply text-4xl mb-6 font-bold
@@ -19,13 +19,13 @@
     @apply text-xl mb-4 font-semibold
   }
   .description {
-    @apply text-base xl:text-xl xl:leading-8
+    @apply text-base xl:text-lg xl:leading-8
   }
   .section {
     @apply w-full h-screen pt-[60px] xl:pt-[120px]
   }
   .btn {
-    @apply rounded-[10px] w-full uppercase font-medium text-white tracking-[2px] text-[13px] flex justify-center items-center transition-all duration-300
+    @apply rounded-[10px] w-full  font-medium text-white tracking-[2px] text-[15px] flex justify-center items-center transition-all duration-300
   }
   .btn-sm {
     @apply h-14
@@ -34,10 +34,10 @@
     @apply h-16
   }
   .btn-cta {
-    @apply bg-primary h-[54px] rounded-[5px] px-4 transition-all duration-300
+    @apply bg-[#0A0A0A] border h-[54px] rounded-[5px] px-4 transition-all duration-300
   }
   .btn-primary {
-    @apply bg-primary
+    @apply bg-[#be0f0fc4]
   }
   .btn-secondary {
     @apply bg-secendary
@@ -46,7 +46,10 @@
     @apply bg-accent hover:bg-accent-hover
   }
   .active {
-    @apply text-accent
+    @apply text-accent bg-[#1F1F1F]
+  }
+  .active-logo {
+    @apply rounded-lg px-5 py-2 bg-gradient-to-br from-[rgba(255,255,255,0.6)] to-[rgba(255,255,255,0.9)]
   }
 }
 
@@ -56,11 +59,13 @@
   }
   .custom-input {
     border-radius: 15px;
-    border: 1px #ed1d24 solid;
+    border: 1px #cdcccc solid;
     padding: 4px 12px;
-    background-color: white;
+    background-color: rgba(238, 231, 231, 0.285);
     height: 32px;
-    box-shadow: 0 0 2px #e14045;
+    box-shadow: 0 0 2px #a7a6a6;
+    color: rgb(228, 223, 223);
+    font-weight: bold;
   }
   
   .custom-input:focus {
