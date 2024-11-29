@@ -1,5 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import { SearchContextProvider } from "./context/SearchContext";
 
 const vazir = localFont({
   src: [
@@ -35,12 +36,15 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
+    <SearchContextProvider>
     <html lang="fa" dir="rtl">
       <body
         className={vazir.variable}
       >
+        <div></div>
         {children}
       </body>
     </html>
+    </SearchContextProvider>
   );
 }

@@ -49,3 +49,23 @@
     @apply text-accent
   }
 }
+
+@layer utilities {
+  .rmdp-container .ep-arrow.custom-arrow::after {
+    background-color: #ed1d24;
+  }
+  .custom-input {
+    border-radius: 15px;
+    border: 1px #ed1d24 solid;
+    padding: 4px 12px;
+    background-color: white;
+    height: 32px;
+    box-shadow: 0 0 2px #e14045;
+  }
+  
+  .custom-input:focus {
+    outline: none;
+    border: 1px solid #c9080e;
+    box-shadow: 0 0 10px 2px #b3272c;
+  }
+}

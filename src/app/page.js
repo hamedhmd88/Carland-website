@@ -1,14 +1,28 @@
+import About from "./components/About";
+import BackToTop from "./components/BackToTop";
+import Cars from "./components/Cars";
+import Cta from "./components/Cta";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Testimonial from "./components/Testimonial";
+import Why from "./components/Why";
 
 export default function Home() {
   return (
    <>
-     <div className="font-vazir text-gray-300">
-    <p className="font-thin text-xl">این متن با وزن Thin است.</p>
-    <p className="font-light text-xl">این متن با وزن Light است.</p>
-    <p className="font-normal text-xl">این متن با وزن Regular است.</p>
-    <p className="font-medium text-xl">این متن با وزن Medium است.</p>
-    <p className="font-bold text-xl">این متن با وزن Bold است.</p>
-  </div>
+     <main className=" max-w-[1920] bg-white mx-auto relative overflow-hidden font-vazir">
+      <Header/>
+      <Hero/>
+      <Cars/>
+      <About/>
+      <Why/>
+      <Testimonial/>
+      <Cta/>
+      <Footer/>
+      <BackToTop/>
+      <div className=" h-[4000px]"></div>
+     </main>
 
    </>
   
