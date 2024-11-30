@@ -96,7 +96,7 @@ function Header() {
             </Link>
             <Link
               className="cursor-pointer hover:bg-[#1F1F1F] px-5 py-2 rounded-lg transition-all"
-              to="testimonials"
+              to="testimonial"
               activeClass="active"
               smooth={desktopMode}
               spy={true}
@@ -186,7 +186,7 @@ function Header() {
               </Link>
             <Link
               className="cursor-pointer"
-              to="testimonials"
+              to="testimonial"
               activeClass="active"
               smooth={desktopMode}
               spy={true}

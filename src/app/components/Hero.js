@@ -18,16 +18,16 @@ function Hero() {
   return (
     <>
       <section className="h-screen xl:h-[90vh] bg-[#b2b7c22]/10" id="home">
-        <div className="container mx-auto h-full pt-10">
+        <div className="container mx-auto h-full pt-16">
           {/* متن و تصویر */}
-          <div className="flex flex-col-reverse xl:flex-row justify-center items-center h-full">
+          <div className="flex  flex-col-reverse xl:flex-row justify-center items-center h-full">
             {/* تصویر خودرو */}
             <motion.div
               variants={fadeIn("up", 0.6)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.6 }}
-              className=" w-full h-full max-h-[50vh] md:max-w-[70vw] xl:max-w-[800px] xl:max-h-[542px] xl:absolute xl:-left-[30px] min-[1680px]:left-[120px] xl:top-48"
+              viewport={{ once: true, amount: 0.6 }}
+              className="relative w-full h-full  max-h-[50vh] md:max-w-[70vw] xl:max-w-[800px] xl:max-h-[542px] xl:absolute xl:-left-[30px] min-[1680px]:left-[120px] xl:top-48"
             >
               <Image
                 src={car}
@@ -44,17 +44,17 @@ function Hero() {
                 variants={fadeIn("down", 0.2)}
                 initial="hidden"
                 whileInView={"show"}
-                viewport={{ once: false, amount: 0.6 }}
+                viewport={{ once: true, amount: 0.6 }}
                 className="h1 xl:tracking-[3px] "
               >
-                بهترین پیشنهادات <span className="text-accent">جهانی</span> را
-                کاوش کنید
+                بهترین خودروهای <span className="text-accent xl:font-extrabold xl:text-6xl xl:leading-[82px] xl:border-dashed xl:border-b-4 xl:border-[#c9080e]">جهانی</span> را
+                 را از ما بخواهید
               </motion.h1>
               <motion.p
                 variants={fadeIn("down", 0.4)}
                 initial="hidden"
                 whileInView={"show"}
-                viewport={{ once: false, amount: 0.6 }}
+                viewport={{ once: 1, amount: 0.6 }}
                 className="description max-w-[550px] mx-auto xl:mx-0 mb-6 xl:mb-10 xl:tracking-[2px]"
               >
                 سواری ایده آل خود را برای هر ماجراجویی با طیف متنوع ما پیدا کنید
@@ -66,7 +66,7 @@ function Hero() {
                 variants={fadeIn("down", 0.6)}
                 initial="hidden"
                 whileInView={"show"}
-                viewport={{ once: false, amount: 0.8 }}
+                viewport={{ once: true, amount: 0.8 }}
                 className="flex gap-x-5 justify-center xl:justify-end mt-6"
               >
                 <button className="btn-cta">
@@ -100,7 +100,7 @@ function Hero() {
               variants={fadeIn("up", 0.8)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.2 }}
+              viewport={{ once: true, amount: 0.2 }}
               className="-mt-12 w-full max-w-[1300px] mx-auto"
             >
               <Search />

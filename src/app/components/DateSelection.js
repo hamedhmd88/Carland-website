@@ -67,7 +67,6 @@ import { FaCalendarAlt } from "react-icons/fa";
 import DatePicker from "react-multi-date-picker";
 import persian from "react-date-object/calendars/persian";
 import persian_fa from "react-date-object/locales/persian_fa";
-import Icon from "react-multi-date-picker/components/icon";
 import "react-multi-date-picker/styles/colors/red.css";
 
 function DateSelection() {

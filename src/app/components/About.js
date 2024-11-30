@@ -36,7 +36,7 @@ const About = () => {
                 variants={fadeIn("down", 0.4)}
                 initial="hidden"
                 whileInView={"show"}
-                viewport={{ once: false, amount: 0.6 }}
+                viewport={{ once: true, amount: 0.6 }}
                 className="h2"
               >
                 {" "}
@@ -51,8 +51,8 @@ const About = () => {
                 variants={fadeIn("up", 0.6)}
                 initial="hidden"
                 whileInView={"show"}
-                viewport={{ once: false, amount: 0.6 }}
-                className="mb-[42px] max-w-md description mx-auto xl:mx-0  xl:mb-10 tracking-[2px] leading-8"
+                viewport={{ once: true, amount: 0.6 }}
+                className="mb-[42px] max-w-md description mx-auto xl:mx-0  xl:mb-true0 tracking-[2px] leading-8"
               >
                 اجاره خودرو، تعمیر آسان خودرو، خرید خودروهای متنوع و همچنین فروش
                 فابل اعتماد و یکپارچه خودرو با خودرولند
@@ -62,8 +62,8 @@ const About = () => {
                 variants={fadeIn("up", 0.8)}
                 initial="hidden"
                 whileInView={"show"}
-                viewport={{ once: false, amount: 0.2 }}
-                className="flex items-center justify-center xl:justify-start gap-x-8 mb-12"
+                viewport={{ once: true, amount: 0.2 }}
+                className="flex items-center justify-center xl:justify-start gap-x-8 mb-true2"
               >
                 {/* car types */}
                 <div className="flex flex-col w-[100px]">
@@ -112,7 +112,7 @@ const About = () => {
                 variants={fadeIn("up", 1)}
                 initial="hidden"
                 whileInView={"show"}
-                viewport={{ once: false, amount: 0.6 }}
+                viewport={{ once: 1, amount: 0.6 }}
                 className="hidden xl:block mx-auto bg-accent hover:bg-accent-hover rounded-[10px] w-full h-16  font-bold text-white tracking-[2px] text-[19px] max-w-[380px]"
               >
                 تماشا تمام خودروها
@@ -124,7 +124,7 @@ const About = () => {
             variants={fadeIn("up", 0.2)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.6 }}
+            viewport={{ once: 1, amount: 0.6 }}
             className="flex-1 mb-8 xl:mb-0"
           >
             <Image

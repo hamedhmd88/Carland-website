@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/* swiper styles */
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  background-color: #f13024;
+}
+
+
 @layer base {
   body {
     @apply text-primary bg-[#000000];
@@ -19,7 +26,7 @@
     @apply text-xl mb-4 font-semibold
   }
   .description {
-    @apply text-base xl:text-lg xl:leading-8
+    @apply text-base xl:text-lg xl:leading-8 tracking-[2px]
   }
   .section {
     @apply w-full h-screen pt-[60px] xl:pt-[120px]

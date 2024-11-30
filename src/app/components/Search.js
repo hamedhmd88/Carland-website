@@ -12,7 +12,7 @@ function Search() {
       <div
         className={`${
           searchActive
-            ? "bg-[#ef0008d8] xl:h-[80px]"
+            ? "bg-[#ef0008fb] top-2 xl:h-[80px]"
             : "bg-[#ef0008d8] py-6 "
         } hidden xl:block  w-full xl:pr-4 rounded-[20px]  relative shadow-lg`}
       >
