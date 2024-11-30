@@ -45,10 +45,9 @@ function HoursSelection() {
           <Menu.Items className="dropdown-menu  font-bold text-md absolute -top-80 xl:top-[90px] left-1/2 xl:right-0 z-10 transform -translate-x-1/2 xl:translate-x-0  text-center xl:text-center w-full bg-[#ef0008ec] max-w-[332px] py-6 rounded-[10px]">
             <div className=" hidden xl:block absolute -top-2 right-4 -z-50 rotate-45 w-6 h-6 bg-[#DD0007]  "></div>
             {hours.map((hour, index) => (
-              <div>
+              <div key={index}>
                 <div
                   onClick={() => setHour(hour)}
-                  key={index}
                   className="cursor-pointer text-primary bg-[#ef0008ec] py-4 xl:pl-10 hover:bg-red-600 text-[16px] "
                 >
                   {hour}
