@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 // variants
 import { fadeIn } from "/variants";
 
-import phone from "/public/assets/images/cta/phone.svg";
+import phone from "/public/assets/images/cta/phone.png";
 import google from "/public/assets/icons/buttons/google-play.svg";
 import apple from "/public/assets/icons/buttons/app-store.svg";
 
