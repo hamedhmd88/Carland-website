@@ -2,6 +2,9 @@
 
 **Carland** is a modern and responsive landing page built with **Next.js 14**, **Tailwind CSS**, and **Framer Motion**. The page features a sleek **dark theme** and is optimized for a seamless user experience across all devices.
 
+## Live Demo
+You can check out the live demo of the project at the following link : [Carland](https://carland-website.vercel.app/)
+
 ## Features
 
 ### 🎨 Responsive Design

@@ -11,7 +11,7 @@ import Why from "./components/Why";
 export default function Home() {
   return (
    <>
-     <main className=" max-w-[1920] bg-[#000000] mx-auto relative overflow-hidden font-vazir">
+     <main className=" max-w-[1920]  bg-[#000000] mx-auto relative overflow-hidden font-vazir">
       <Header/>
       <Hero/>
       <Cars/>
