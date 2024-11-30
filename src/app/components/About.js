@@ -63,7 +63,7 @@ const About = () => {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: true, amount: 0.2 }}
-                className="flex items-center justify-center xl:justify-start gap-x-8 mb-true2"
+                className="flex items-center justify-center xl:justify-start gap-x-8 mb-12"
               >
                 {/* car types */}
                 <div className="flex flex-col w-[100px]">
